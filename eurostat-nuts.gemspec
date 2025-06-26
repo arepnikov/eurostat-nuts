@@ -14,4 +14,6 @@ Gem::Specification.new do |s|
   s.files = Dir.glob('{lib}/**/*')
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = '>= 2.7.0'
+
+  s.add_development_dependency 'minitest'
 end
