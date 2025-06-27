@@ -13,22 +13,22 @@ module Eurostat
 
         def test_galicia
           nuts_label = "Galicia"
-          assert_equal "ES1",  Eurostat::NUTS.get_code_for_level(nuts_label, 1)
+          assert_equal "ES1", Eurostat::NUTS.get_code_for_level(nuts_label, 1)
           assert_equal "ES11", Eurostat::NUTS.get_code_for_level(nuts_label, 2)
           assert_nil Eurostat::NUTS.get_code_for_level(nuts_label, 3)
         end
 
         def test_a_coruna
           nuts_label = "A Coruña"
-          assert_equal "ES1",   Eurostat::NUTS.get_code_for_level(nuts_label, 1)
-          assert_equal "ES11",  Eurostat::NUTS.get_code_for_level(nuts_label, 2)
+          assert_equal "ES1", Eurostat::NUTS.get_code_for_level(nuts_label, 1)
+          assert_equal "ES11", Eurostat::NUTS.get_code_for_level(nuts_label, 2)
           assert_equal "ES111", Eurostat::NUTS.get_code_for_level(nuts_label, 3)
         end
 
         def test_lugo
           nuts_label = "Lugo"
-          assert_equal "ES1",   Eurostat::NUTS.get_code_for_level(nuts_label, 1)
-          assert_equal "ES11",  Eurostat::NUTS.get_code_for_level(nuts_label, 2)
+          assert_equal "ES1", Eurostat::NUTS.get_code_for_level(nuts_label, 1)
+          assert_equal "ES11", Eurostat::NUTS.get_code_for_level(nuts_label, 2)
           assert_equal "ES112", Eurostat::NUTS.get_code_for_level(nuts_label, 3)
         end
 
