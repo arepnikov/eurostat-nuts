@@ -21,7 +21,9 @@ level_three:
     ES114: "Pontevedra"
     ES120: "Asturias"
     ES130: "Cantabria"
-    ES211: "Araba/Álava"
+    ES211:
+      - "Álava"
+      - "Araba"
     ES212: "Gipuzkoa"
     ES213: "Bizkaia"
     ES220: "Navarra"
