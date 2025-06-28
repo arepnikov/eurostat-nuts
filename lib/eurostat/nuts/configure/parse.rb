@@ -2,14 +2,33 @@ module Eurostat
   module NUTS
     module Configure
       class Parse
-        Result = Data.define(:level_one, :level_two, :level_three)
-
         def self.call(data)
           new.call(data)
         end
 
         def call(data)
-          # TODO
+          nuts_data = flatten_countries_data(data)
+
+          normalized_nuts_data = nuts_data.flat_map(&method(:normalize_nuts_data))
+          normalized_nuts_data
+        end
+
+        private
+
+        def flatten_countries_data(data)
+          data.flat_map { |_country_code, country_nuts_data| country_nuts_data }
+        end
+
+        def normalize_nuts_data(country_nuts_data)
+          country_nuts_data.map do |nuts_code, details|
+            level, label = details.values_at('level', 'label')
+
+            {
+              code: nuts_code,
+              level: level,
+              labels: Array(label)
+            }
+          end
         end
       end
     end
