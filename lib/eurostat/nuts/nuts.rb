@@ -4,6 +4,10 @@ module Eurostat
       "I'm alive"
     end
 
+    def self.registry
+      'not_implemented'
+    end
+
     def self.get(code)
       'not_implemented'
     end
