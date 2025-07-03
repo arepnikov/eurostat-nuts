@@ -1,32 +1,67 @@
-level_one:
-  ES:
-    ES1: "Noroeste"
-    ES2: "Noreste"
-    ES3: "Comunidad de Madrid"
-level_two:
-  ES:
-    ES11: "Galicia"
-    ES12: "Principado de Asturias"
-    ES13: "Cantabria"
-    ES21: "País Vasco"
-    ES22: "Comunidad Foral de Navarra"
-    ES23: "La Rioja"
-    ES24: "Aragón"
-    ES30: "Comunidad de Madrid"
-level_three:
-  ES:
-    ES111: "A Coruña"
-    ES112: "Lugo"
-    ES113: "Ourense"
-    ES114: "Pontevedra"
-    ES120: "Asturias"
-    ES130: "Cantabria"
-    ES211: "Araba/Álava"
-    ES212: "Gipuzkoa"
-    ES213: "Bizkaia"
-    ES220: "Navarra"
-    ES230: "La Rioja"
-    ES241: "Huesca"
-    ES242: "Teruel"
-    ES243: "Zaragoza"
-    ES300: "Madrid"
+ES:
+  ES1:
+    level: 1
+    label: "Noroeste"
+  ES11:
+    level: 2
+    label: "Galicia"
+  ES111:
+    level: 3
+    label: "A Coruña"
+  ES112:
+    level: 3
+    label: "Lugo"
+  ES2:
+    level: 1
+    label: "Noreste"
+  ES21:
+    level: 2
+    label: "País Vasco"
+  ES211:
+    level: 3
+    label:
+      - "Álava"
+      - "Araba"
+  ES212:
+    level: 3
+    label: "Gipuzkoa"
+  ES3:
+    level: 1
+    label: "Comunidad de Madrid"
+  ES30:
+    level: 2
+    label: "Comunidad de Madrid"
+  ES300:
+    level: 3
+    label: "Madrid"
+PL:
+  PL5:
+    level: 1
+    label: "Makroregion południowo-zachodni"
+  PL51:
+    level: 2
+    label: "Dolnośląskie"
+  PL514:
+    level: 3
+    label: "Miasto Wrocław"
+  PL515:
+    level: 3
+    label: "Jeleniogórski"
+  PL516:
+    level: 3
+    label: "Legnicko-głogowski"
+  PL9:
+    level: 1
+    label: "Makroregion województwo mazowieckie"
+  PL91:
+    level: 2
+    label: "Warszawski stołeczny"
+  PL911:
+    level: 3
+    label: "Miasto Warszawa"
+  PL92:
+    level: 2
+    label: "Mazowiecki regionalny"
+  PL926:
+    level: 3
+    label: "Żyrardowski"
