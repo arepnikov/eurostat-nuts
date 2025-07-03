@@ -1,0 +1,274 @@
+---
+ES:
+  ES1:
+    level: 1
+    label: Noroeste
+  ES11:
+    level: 2
+    label: Galicia
+  ES111:
+    level: 3
+    label: A Coruña
+  ES112:
+    level: 3
+    label: Lugo
+  ES113:
+    level: 3
+    label: Ourense
+  ES114:
+    level: 3
+    label: Pontevedra
+  ES12:
+    level: 2
+    label: Principado de Asturias
+  ES120:
+    level: 3
+    label: Asturias
+  ES13:
+    level: 2
+    label: Cantabria
+  ES130:
+    level: 3
+    label: Cantabria
+  ES2:
+    level: 1
+    label: Noreste
+  ES21:
+    level: 2
+    label: País Vasco
+  ES211:
+    level: 3
+    label:
+    - Araba
+    - Álava
+  ES212:
+    level: 3
+    label: Gipuzkoa
+  ES213:
+    level: 3
+    label: Bizkaia
+  ES22:
+    level: 2
+    label: Comunidad Foral de Navarra
+  ES220:
+    level: 3
+    label: Navarra
+  ES23:
+    level: 2
+    label: La Rioja
+  ES230:
+    level: 3
+    label: La Rioja
+  ES24:
+    level: 2
+    label: Aragón
+  ES241:
+    level: 3
+    label: Huesca
+  ES242:
+    level: 3
+    label: Teruel
+  ES243:
+    level: 3
+    label: Zaragoza
+  ES3:
+    level: 1
+    label: Comunidad de Madrid
+  ES30:
+    level: 2
+    label: Comunidad de Madrid
+  ES300:
+    level: 3
+    label: Madrid
+  ES4:
+    level: 1
+    label: Centro (ES)
+  ES41:
+    level: 2
+    label: Castilla y León
+  ES411:
+    level: 3
+    label: Ávila
+  ES412:
+    level: 3
+    label: Burgos
+  ES413:
+    level: 3
+    label: León
+  ES414:
+    level: 3
+    label: Palencia
+  ES415:
+    level: 3
+    label: Salamanca
+  ES416:
+    level: 3
+    label: Segovia
+  ES417:
+    level: 3
+    label: Soria
+  ES418:
+    level: 3
+    label: Valladolid
+  ES419:
+    level: 3
+    label: Zamora
+  ES42:
+    level: 2
+    label: Castilla-La Mancha
+  ES421:
+    level: 3
+    label: Albacete
+  ES422:
+    level: 3
+    label: Ciudad Real
+  ES423:
+    level: 3
+    label: Cuenca
+  ES424:
+    level: 3
+    label: Guadalajara
+  ES425:
+    level: 3
+    label: Toledo
+  ES43:
+    level: 2
+    label: Extremadura
+  ES431:
+    level: 3
+    label: Badajoz
+  ES432:
+    level: 3
+    label: Cáceres
+  ES5:
+    level: 1
+    label: Este
+  ES51:
+    level: 2
+    label: Cataluña
+  ES511:
+    level: 3
+    label: Barcelona
+  ES512:
+    level: 3
+    label: Girona
+  ES513:
+    level: 3
+    label: Lleida
+  ES514:
+    level: 3
+    label: Tarragona
+  ES52:
+    level: 2
+    label: 'Comunitat Valenciana '
+  ES521:
+    level: 3
+    label:
+    - Alicante
+    - Alacant
+  ES522:
+    level: 3
+    label:
+    - Castellón
+    - Castelló
+  ES523:
+    level: 3
+    label:
+    - Valencia
+    - València
+  ES53:
+    level: 2
+    label: Illes Balears
+  ES531:
+    level: 3
+    label: Eivissa y Formentera
+  ES532:
+    level: 3
+    label: Mallorca
+  ES533:
+    level: 3
+    label: Menorca
+  ES6:
+    level: 1
+    label: Sur
+  ES61:
+    level: 2
+    label: Andalucía
+  ES611:
+    level: 3
+    label: Almería
+  ES612:
+    level: 3
+    label: Cádiz
+  ES613:
+    level: 3
+    label: Córdoba
+  ES614:
+    level: 3
+    label: Granada
+  ES615:
+    level: 3
+    label: Huelva
+  ES616:
+    level: 3
+    label: Jaén
+  ES617:
+    level: 3
+    label: Málaga
+  ES618:
+    level: 3
+    label: Sevilla
+  ES62:
+    level: 2
+    label: Región de Murcia
+  ES620:
+    level: 3
+    label: Murcia
+  ES63:
+    level: 2
+    label: Ciudad de Ceuta
+  ES630:
+    level: 3
+    label: Ceuta
+  ES64:
+    level: 2
+    label: Ciudad de Melilla
+  ES640:
+    level: 3
+    label: Melilla
+  ES7:
+    level: 1
+    label: Canarias
+  ES70:
+    level: 2
+    label: Canarias
+  ES703:
+    level: 3
+    label: El Hierro
+  ES704:
+    level: 3
+    label: Fuerteventura
+  ES705:
+    level: 3
+    label: Gran Canaria
+  ES706:
+    level: 3
+    label: La Gomera
+  ES707:
+    level: 3
+    label: La Palma
+  ES708:
+    level: 3
+    label: Lanzarote
+  ES709:
+    level: 3
+    label: Tenerife
+  ESZ:
+    level: 1
+    label: Extra-Regio NUTS 1
+  ESZZ:
+    level: 2
+    label: Extra-Regio NUTS 2
+  ESZZZ:
+    level: 3
+    label: Extra-Regio NUTS 3
