@@ -1,7 +1,7 @@
 module Eurostat
   module NUTS
     module Controls
-      module NUTSData
+      module NUTSEntries
         def self.example
           [
             *Spain.nuts_entries,
@@ -9,11 +9,11 @@ module Eurostat
           ]
         end
 
-        module Raw
+        module RawData
           def self.example
             {
-              Spain.country_code => Spain.raw_nuts_entries,
-              Poland.country_code => Poland.raw_nuts_entries,
+              Spain.country_code => Spain.raw_nuts_entries_data,
+              Poland.country_code => Poland.raw_nuts_entries_data,
             }
           end
         end
@@ -25,21 +25,21 @@ module Eurostat
 
           def self.nuts_entries
             [
-              { code: "ES1",   level: 1, labels: ["Noroeste"] },
-              { code: "ES11",  level: 2, labels: ["Galicia"] },
-              { code: "ES111", level: 3, labels: ["A Coruña"] },
-              { code: "ES112", level: 3, labels: ["Lugo"] },
-              { code: "ES2",   level: 1, labels: ["Noreste"] },
-              { code: "ES21",  level: 2, labels: ["País Vasco"] },
-              { code: "ES211", level: 3, labels: ["Álava", "Araba"] },
-              { code: "ES212", level: 3, labels: ["Gipuzkoa"] },
-              { code: "ES3"  , level: 1, labels: ["Comunidad de Madrid"] },
-              { code: "ES30" , level: 2, labels: ["Comunidad de Madrid"] },
-              { code: "ES300", level: 3, labels: ["Madrid"] }
+              NUTS::Entry::LevelOne  .new(code: "ES1",   labels: ["Noroeste"]),
+              NUTS::Entry::LevelTwo  .new(code: "ES11",  labels: ["Galicia"]),
+              NUTS::Entry::LevelThree.new(code: "ES111", labels: ["A Coruña"]),
+              NUTS::Entry::LevelThree.new(code: "ES112", labels: ["Lugo"]),
+              NUTS::Entry::LevelOne  .new(code: "ES2",   labels: ["Noreste"]),
+              NUTS::Entry::LevelTwo  .new(code: "ES21",  labels: ["País Vasco"]),
+              NUTS::Entry::LevelThree.new(code: "ES211", labels: ["Álava", "Araba"]),
+              NUTS::Entry::LevelThree.new(code: "ES212", labels: ["Gipuzkoa"]),
+              NUTS::Entry::LevelOne  .new(code: "ES3"  , labels: ["Comunidad de Madrid"]),
+              NUTS::Entry::LevelTwo  .new(code: "ES30" , labels: ["Comunidad de Madrid"]),
+              NUTS::Entry::LevelThree.new(code: "ES300", labels: ["Madrid"])
             ]
           end
 
-          def self.raw_nuts_entries
+          def self.raw_nuts_entries_data
             {
               "ES1"   => { "level" => 1, "label" => "Noroeste" },
               "ES11"  => { "level" => 2, "label" => "Galicia" },
@@ -63,20 +63,20 @@ module Eurostat
 
           def self.nuts_entries
             [
-              { code: "PL5",   level: 1, labels: ["Makroregion południowo-zachodni"] },
-              { code: "PL51",  level: 2, labels: ["Dolnośląskie"] },
-              { code: "PL514", level: 3, labels: ["Miasto Wrocław"] },
-              { code: "PL515", level: 3, labels: ["Jeleniogórski"] },
-              { code: "PL516", level: 3, labels: ["Legnicko-głogowski"] },
-              { code: "PL9",   level: 1, labels: ["Makroregion województwo mazowieckie"] },
-              { code: "PL91",  level: 2, labels: ["Warszawski stołeczny"] },
-              { code: "PL911", level: 3, labels: ["Miasto Warszawa"] },
-              { code: "PL92",  level: 2, labels: ["Mazowiecki regionalny"] },
-              { code: "PL926", level: 3, labels: ["Żyrardowski"] }
+              NUTS::Entry::LevelOne  .new(code: "PL5",   labels: ["Makroregion południowo-zachodni"]),
+              NUTS::Entry::LevelTwo  .new(code: "PL51",  labels: ["Dolnośląskie"]),
+              NUTS::Entry::LevelThree.new(code: "PL514", labels: ["Miasto Wrocław"]),
+              NUTS::Entry::LevelThree.new(code: "PL515", labels: ["Jeleniogórski"]),
+              NUTS::Entry::LevelThree.new(code: "PL516", labels: ["Legnicko-głogowski"]),
+              NUTS::Entry::LevelOne  .new(code: "PL9",   labels: ["Makroregion województwo mazowieckie"]),
+              NUTS::Entry::LevelTwo  .new(code: "PL91",  labels: ["Warszawski stołeczny"]),
+              NUTS::Entry::LevelThree.new(code: "PL911", labels: ["Miasto Warszawa"]),
+              NUTS::Entry::LevelTwo  .new(code: "PL92",  labels: ["Mazowiecki regionalny"]),
+              NUTS::Entry::LevelThree.new(code: "PL926", labels: ["Żyrardowski"])
             ]
           end
 
-          def self.raw_nuts_entries
+          def self.raw_nuts_entries_data
             {
               "PL5"   => { "level" => 1, "label" => "Makroregion południowo-zachodni" },
               "PL51"  => { "level" => 2, "label" => "Dolnośląskie" },
