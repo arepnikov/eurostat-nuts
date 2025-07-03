@@ -12,8 +12,8 @@ module Eurostat
           end
 
           def test_level_one_projection
-            expect_itsel = subject_entry
-            assert_equal expect_itsel, subject_entry.level_one_projection
+            expect_itself = subject_entry
+            assert_equal expect_itself, subject_entry.level_one_projection
           end
 
           def test_level_two_projection
