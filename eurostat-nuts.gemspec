@@ -15,6 +15,6 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.required_ruby_version = '>= 2.7.0'
 
-  s.add_runtime_dependency 'i18n'
-  s.add_development_dependency 'minitest'
+  s.add_runtime_dependency 'i18n', '~> 1.14'
+  s.add_development_dependency 'minitest', '~> 5.25'
 end
