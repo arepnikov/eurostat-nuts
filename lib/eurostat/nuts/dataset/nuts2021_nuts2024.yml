@@ -8,13 +8,18 @@ ES:
     label: Galicia
   ES111:
     level: 3
-    label: A Coruña
+    label:
+    - A Coruña
+    - Coruña
+    - Corunna
   ES112:
     level: 3
     label: Lugo
   ES113:
     level: 3
-    label: Ourense
+    label:
+    - Ourense
+    - Orense
   ES114:
     level: 3
     label: Pontevedra
@@ -43,16 +48,23 @@ ES:
     - Álava
   ES212:
     level: 3
-    label: Gipuzkoa
+    label:
+    - Gipuzkoa
+    - Guipúzcoa
   ES213:
     level: 3
-    label: Bizkaia
+    label:
+    - Bizkaia
+    - Vizcaya
+    - Biscay
   ES22:
     level: 2
     label: Comunidad Foral de Navarra
   ES220:
     level: 3
-    label: Navarra
+    label:
+    - Navarra
+    - Navarre
   ES23:
     level: 2
     label: La Rioja
@@ -70,7 +82,9 @@ ES:
     label: Teruel
   ES243:
     level: 3
-    label: Zaragoza
+    label:
+    - Zaragoza
+    - Saragossa
   ES3:
     level: 1
     label: Comunidad de Madrid
@@ -115,7 +129,9 @@ ES:
     label: Zamora
   ES42:
     level: 2
-    label: Castilla-La Mancha
+    label:
+    - Castilla-La Mancha
+    - Castille-La Mancha
   ES421:
     level: 3
     label: Albacete
@@ -145,16 +161,22 @@ ES:
     label: Este
   ES51:
     level: 2
-    label: Cataluña
+    label:
+    - Cataluña
+    - Catalonia
   ES511:
     level: 3
     label: Barcelona
   ES512:
     level: 3
-    label: Girona
+    label:
+    - Girona
+    - Gerona
   ES513:
     level: 3
-    label: Lleida
+    label:
+    - Lleida
+    - Lérida
   ES514:
     level: 3
     label: Tarragona
@@ -217,7 +239,9 @@ ES:
     label: Málaga
   ES618:
     level: 3
-    label: Sevilla
+    label:
+    - Sevilla
+    - Seville
   ES62:
     level: 2
     label: Región de Murcia
