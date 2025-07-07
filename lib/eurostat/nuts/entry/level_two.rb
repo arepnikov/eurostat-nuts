@@ -7,7 +7,7 @@ module Eurostat
 
         def level_one_projection
           level_one_code = code[...-1]
-          NUTS.get(level_one_code)
+          NUTS.registry.get(level_one_code)
         end
 
         def level_two_projection
