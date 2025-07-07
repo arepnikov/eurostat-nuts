@@ -1,5 +1,6 @@
 require 'yaml'
 require 'i18n' # I18n.transliterate
+I18n.load_path << File.expand_path("nuts/locales/en.yml", __dir__)
 
 require 'eurostat/nuts/nuts'
 require 'eurostat/nuts/configuration/configuration_missing_error'
