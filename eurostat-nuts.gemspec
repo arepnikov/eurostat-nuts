@@ -1,12 +1,12 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'ar-eurostat-nuts'
-  s.version = '0.0.0'
+  s.version = '0.1.0.alpha'
   s.summary = 'Provides an interface to fetch NUTS numbers (Nomenclature of territorial units for statistics)'
-  s.description = ''
+  s.description = 'Provides an interface to fetch NUTS numbers (Nomenclature of territorial units for statistics)'
 
   s.authors = ['Alexander Repnikov', 'Eloy Rojas Bartolomé']
-  s.email = ''
+  s.email = 'aleksander.repnikov@gmail.com'
   s.homepage = 'https://github.com/arepnikov/eurostat-nuts'
   s.licenses = ['MIT']
 
