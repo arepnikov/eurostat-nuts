@@ -13,8 +13,8 @@ module Eurostat
       end
 
       def find(label)
-        normilized_label = NormalizeLabel.(label)
-        @label_registry[normilized_label]
+        normalized_label = NormalizeLabel.(label)
+        @label_registry[normalized_label]
       end
     end
   end
