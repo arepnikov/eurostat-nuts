@@ -36,7 +36,7 @@ module Eurostat
         end
 
         # Entries with labels 'Extra-Regio NUTS 1', 'Extra-Regio NUTS 2', 'Extra-Regio NUTS 3'
-        # exist in each country. This abiguity makes it not deterministic to fetch entry by
+        # exist in each country. This ambiguity makes it not deterministic to fetch entry by
         # one of this labels.
         def remove_extra_regio_entries(entry_by_label)
           SKIP_FOR_LABELS
