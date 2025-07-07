@@ -5,8 +5,8 @@ module Eurostat
     module Entry
       module LevelTwoTests
         class LevelProjectionTest < Minitest::Test
-          module StubNUTSGet
-            def self.call(code)
+          module StubNUTSRegistry
+            def self.get(code)
               case code
               when "AB1"  then Controls::Entry::LevelOne.example(code: "AB1")
               end
@@ -20,7 +20,7 @@ module Eurostat
           end
 
           def test_level_one_projection
-            Eurostat::NUTS.stub(:get, StubNUTSGet) do
+            Eurostat::NUTS.stub(:registry, StubNUTSRegistry) do
               expected_entry = Controls::Entry::LevelOne.example(code: "AB1")
               assert_equal expected_entry, subject_entry.level_one_projection
             end
