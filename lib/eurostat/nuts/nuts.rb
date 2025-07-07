@@ -1,11 +1,14 @@
 module Eurostat
   module NUTS
-    def self.heartbeat
-      "I'm alive"
+    def self.configure(nuts_data)
+      nuts_entries = Configuration::ParseEntriesData.(nuts_data)
+      @registry = Registry.build(nuts_entries)
     end
 
     def self.registry
-      'not_implemented'
+      raise Configuration::ConfigurationMissingError unless instance_variable_defined?(:@registry)
+
+      @registry
     end
 
     def self.get(code)
